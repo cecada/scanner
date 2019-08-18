@@ -18,8 +18,8 @@ PAUSE = 0.5
 NEWIP = 10
 LOOTPATH = "finds.txt"
 DEBUGPATH = "debug.txt"
-VERBOS = True
-
+VERBOSE = True
+ 
 class TitleParser(HTMLParser):
 	def __init__(self):
 		HTMLParser.__init__(self)
@@ -124,7 +124,7 @@ def main():
 				html[1] = "FOUND! " + title				
 				log(LOOTPATH, url + "," + title)
 
-			if VERBOS:
+			if VERBOSE:
 				log(DEBUGPATH, url + "," + html[1])
 
 			report_progress(html,ip,tries,found)
