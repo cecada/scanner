@@ -12,7 +12,7 @@ from urllib.request import Request, urlopen
 
 TORSERVER = '127.0.0.1'
 TORPORT = 9050
-BASEURL = 'https://anonfile.com/'
+BASEURL = 'https://example.com/'
 KEYLEN = 10
 PAUSE = 0.5
 NEWIP = 10
